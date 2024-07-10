@@ -19,6 +19,7 @@ public class TourManagementService {
         createTour("Endangered Specie Expedition", 250, true);
     } 
 
+
     public Tour createTour(String title, Integer price, Boolean isKidFriendly) {
         return tourRepository.save(new Tour(title, price, isKidFriendly));
     }
